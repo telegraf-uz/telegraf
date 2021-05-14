@@ -1,7 +1,8 @@
 <template>
   <Layout :sidebar="false">
     <div class="content">
-      <h1>{{ $static.metadata.siteName }} - {{ this.description }}</h1>
+      <h1>{{ $static.metadata.siteName }}</h1>
+      <h2>{{ this.description }}</h2>
       <nav>
         <!-- To use other icons here, you need to import them in the Shortcut component -->
         <Shortcut link="/getting-started" text="Introduction" icon="play-icon" />
@@ -32,7 +33,7 @@ export default {
   },
   data() {
     return {
-      description: 'The ultimate static generated documentation theme for the JAM-stack'
+      description: 'O\'zbekchada Telegram bot yozishni o\'rganamiz'
     }
   },
   metaInfo() {

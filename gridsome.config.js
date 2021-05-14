@@ -16,8 +16,8 @@ function addStyleResource (rule) {
 }
 
 module.exports = {
-  siteName: 'Jamdocs',
-  siteUrl: 'https://jamdocs.samuelhorn.com',
+  siteName: 'Telegraf Uzbekistan',
+  siteUrl: 'https://telegrafuz.netlify.app/',
   templates: {
     Doc: '/:slug',
   },
