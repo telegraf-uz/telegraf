@@ -1,6 +1,11 @@
 {
   "name": "telegraf",
   "private": true,
+  "version": "1.0.0",
+  "description": "Telergam bot building guide in Uzbek language",
+  "repository": "https://github.com/telegraf-uz/telegraf.git",
+  "author": "Geno Ferollo <sakhib.orzklv@icloud.com>",
+  "license": "GPL-3.0",
   "scripts": {
     "build": "gridsome build",
     "develop": "gridsome develop",

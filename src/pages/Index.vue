@@ -1,13 +1,11 @@
 <template>
   <Layout :sidebar="false">
     <div class="content">
-      <h1>{{ $static.metadata.siteName }}</h1>
-      <h2>{{ this.description }}</h2>
+      <h1>{{ $static.metadata.siteName }} <br> {{ this.description }}</h1>
       <nav>
-        <!-- To use other icons here, you need to import them in the Shortcut component -->
-        <Shortcut link="/getting-started" text="Introduction" icon="play-icon" />
-        <Shortcut link="/theme-configuration" text="Configuration" icon="sliders-icon" />
-        <Shortcut link="/theme-configuration#changing-colors" text="Change colors" icon="eye-icon" />
+        <Shortcut link="/introduction" text="Kirish" icon="play-icon" />
+        <Shortcut link="/theme-configuration" text="Foydali" icon="sliders-icon" />
+        <Shortcut link="/theme-configuration#changing-colors" text="Misollar" icon="eye-icon" />
       </nav>
       <GitLink class="git" size="large" />
     </div>

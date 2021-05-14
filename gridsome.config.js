@@ -16,7 +16,7 @@ function addStyleResource (rule) {
 }
 
 module.exports = {
-  siteName: 'Telegraf Uzbekistan',
+  siteName: 'Telegraf O\'zbekistan',
   siteUrl: 'https://telegrafuz.netlify.app/',
   templates: {
     Doc: '/:slug',
