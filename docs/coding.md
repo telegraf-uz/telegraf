@@ -1,6 +1,6 @@
 ---
 title: Misol orqali bot
-date: 2020-01-02
+date: 2021-05-17
 slug: coding
 
 ---

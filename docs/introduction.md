@@ -1,6 +1,6 @@
 ---
 title: Kirish Qism
-date: 2021-05-15 07:42:34
+date: 2021-05-17 07:42:34
 slug: introduction
 ---
 
