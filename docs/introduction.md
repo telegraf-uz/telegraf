@@ -21,7 +21,7 @@ Shu sababli, botlar mobil yordamchilarga aylandi, siz hatto messenjerni tark etm
 
 Siz hatto mustaqil ravishda telegrammalarda bot yozishingiz mumkin. Buning uchun dasturning qaysi maqsadlari amalga oshirilishini aniqlang: xabarlarga javob berish, valyutani aylantirish yoki boshqa funktsiyalarni bajarish. Agar dasturlash tillarini bilmasangiz-bu muhim emas. Oddiy robotlar hatto ularsiz ham yozilishi mumkin. Ishni boshlash uchun @BotFather botga obuna bo'ling va uni ishga tushiring, so'ngra ko'rsatmalarga rioya qiling:
 
-1. Buyruq satriga yozing / newbot (yangi bot yaratadi).
+1. Buyruq satriga yozing /newbot (yangi bot yaratadi).
 2. BotFather sizning avlodingizni chaqirishni taklif qilishini kuting. Har qanday ism bilan keling, lekin "bot"bilan tugashini unutmang.
 3. Bu erda siz botning yuzini (avatarini) qo'shishingiz va uni ta'riflashingiz mumkin.
 4. Botfather'dan noyob belgi oling.
@@ -37,8 +37,9 @@ Nihoyat, biz sizga ushbu ajoyib messenjerning deyarli har qanday foydalanuvchisi
 
 ## Telegram bot ishlash uslublari
 
-maybe bla bla?
+Telegram bot ikki usulda ishlaydi va ikkalasi ham sharoitga qarab ishlatiladi. Bular:
 
-## Bot registratsiya qilish va boshqarish
-
-or bla bla
+* Webhook - bironta yangilik yoki informatsiya yuklanganda Telegram serverlari o'zi sizning telegram botingiz host qilingan serverga murojaat qiladi va javobini kutadi
+* Polling - ma'lum bir interval orasida telegramda yangilik borligini serverdan turib tekshiriladi va bo'sa telegram bot o'zi avtomatik ravishda javob beradi
+  
+Webhook va Polling orasidagi farq shundaki, polling usuli webhook ga nisbatan botni rivojlantirish yoki bironta jonli tarzda olib boriladigan protsedura uchun ishlatiladi
