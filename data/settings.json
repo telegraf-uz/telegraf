@@ -10,15 +10,20 @@
       ]
     },
     {
-      "section": "Setup",
+      "section": "Tushunchalar",
       "topics": [
         {
-          "title": "Theme configuration",
-          "slug": "theme-configuration"
-        },
+          "title": "Freymvork",
+          "slug": "framework"
+        }
+      ]
+    },
+    {
+      "section": "Dasturlash",
+      "topics": [
         {
-          "title": "Forestry CMS",
-          "slug": "forestry-cms"
+          "title": "Misol orqali bot",
+          "slug": "coding"
         }
       ]
     }

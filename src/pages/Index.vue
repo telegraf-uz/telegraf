@@ -4,8 +4,8 @@
       <h1>{{ $static.metadata.siteName }} <br> {{ this.description }}</h1>
       <nav>
         <Shortcut link="/introduction" text="Kirish" icon="play-icon" />
-        <Shortcut link="/theme-configuration" text="Foydali" icon="sliders-icon" />
-        <Shortcut link="/theme-configuration#changing-colors" text="Misollar" icon="eye-icon" />
+        <Shortcut link="/framework" text="Foydali" icon="sliders-icon" />
+        <Shortcut link="https://github.com/telegraf-uz/examples" text="Misollar" icon="eye-icon" />
       </nav>
       <GitLink class="git" size="large" />
     </div>
