@@ -2,8 +2,8 @@
 title: Misol orqali bot
 date: 2021-05-17
 slug: coding
-
 ---
+
 ## Salom Dunyo!
 
 bla bla
