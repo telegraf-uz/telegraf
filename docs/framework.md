@@ -24,15 +24,109 @@ bir qarashdan zerikarli ko'ringan habarlarni, chiroyli va tartibli xabarga aylan
 
 ## Telegraf va Composer
 
-Ko'pincha holatlarda kuzatganimda odamlar telegram botning tuzilishi aniqlashtirmasdan turib tavakkaliga
+Ko'pincha holatlarda kuzatganimda, odamlar telegram botning tuzilishi aniqlashtirmasdan turib tavakkaliga
 telegram botni yozib ketishadi va bu avvalambor judayam katta xato hisoblanadi. Masalan, sizning botingiz
-kelajakda ko'plab qo'shimcha funksional yoki plaginlar o'z ichiga olsa, modulyar sxemada yozish ma'qul
-ko'riladi. Agar botingiz faqatgina stabil bittagina reliz uchun ishlaydigan, yoki xavfsizlik yuzasidan
-judayam katta e'tibor qaratilgan bot bo'lsa, class yoki funksional shaklda yozish ma'qul ko'riladi.
-Keling endi bir telegram bot misollarida yordamida ko'ramiz orasidagi farqlarni:
+kelajakda ko'plab qo'shimcha funksional yoki plaginlar o'z ichiga olsa, modulyar sxemada Composer yordamida 
+yozish ma'qul ko'riladi. Agar botingiz faqatgina stabil bittagina reliz uchun ishlaydigan, yoki xavfsizlik 
+yuzasidan judayam katta e'tibor qaratilgan bot bo'lsa, class yoki funksional shaklda Telegraf o'zi yordamidagi
+yozish ma'qul ko'riladi. Keling endi bir telegram bot misollarida yordamida ko'ramiz orasidagi farqlarni:
 
-**Telegraf**
+**Telegraf tuzilishida fayllar oraro tuzilishi**
 
 ```shell
-echo Hello
+│   app.ts
+│
+├───security
+│       index.ts
+│       ...
+│
+├───core
+│       bot.ts
+│       env.ts
+│       index.ts
+│       database
+│           ds.ts
+│           dt.ts
+│
+├───patches
+│       index.ts
+│       ...
+│
+└───types
+        telegraf.d.ts
 ```
+
+**Endi esa, Composer yordamidagi tuzilish**
+
+```shell
+│   app.ts
+│
+├───actions
+│   │   index.ts
+│   │
+│   ├───actions
+│   │       help.ts
+│   │       index.ts
+│   │
+│   ├───admin
+│   │       add.ts
+│   │       chat.ts
+│   │       index.ts
+│   │       list.ts
+│   │       reset.ts
+│   │       send.ts
+│   │       tell.ts
+│   │
+│   ├───controllers
+│   │   │   index.ts
+│   │   │
+│   │   │
+│   │   └───panel
+│   │           clear.ts
+│   │           enter.ts
+│   │           help.ts
+│   │           index.ts
+│   │           leave.ts
+│   │           show.ts
+│   │           text.ts
+│   │           wbis.ts
+│   │
+│   ├───cron
+│   │       identifier.ts
+│   │       index.ts
+│   │
+│   ├───exclude
+│   │       index.ts
+│   │
+│   ├───middlewares
+│   │       contribute.ts
+│   │       feedback.ts
+│   │       help.ts
+│   │       index.ts
+│   │       links.ts
+│   │       start.ts
+│   │       stats.ts
+│   │
+│   └───security
+│           index.ts
+│
+├───core
+│       bot.ts
+│       env.ts
+│       index.ts
+│
+├───database
+│       db.ts
+│       ds.ts
+│       user.ts
+│
+├───layouts
+│       consoles.ts
+│       keyboards.ts
+│       messages.ts
+│
+└───types
+        telegraf.d.ts
+```
+
+O'ylaymanki taxminan tushundingiz orasidagi farqlarni.
